@@ -54,6 +54,15 @@
 	/*   make a Grid   end  */
 
 
+    /*    tabs  */
+
+    $(".advantag__content-item").not(":first").hide();
+    $(".advantag__tab").click(function() {
+      $(".advantag__tab").removeClass("active_tab").eq($(this).index()).addClass("active_tab");
+      $(".advantag__content-item").hide().eq($(this).index()).fadeIn()
+    });
+
+    /*    tabs end */
 
 
 	/*   waypoint */
